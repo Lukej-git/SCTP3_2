@@ -130,13 +130,13 @@ resource "aws_subnet" "private_subnet_a" {
 # ---------------------------
 
 resource "aws_security_group" "ec2a_sg" {
-  vpc_id = aws_vpc.vpc_a.id  # Attach to VPC A
+  vpc_id = aws_vpc.vpc_a.id # Attach to VPC A
 
   ingress {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]  # Restrict this in production
+    cidr_blocks = ["0.0.0.0/0"] # Restrict this in production
   }
 
   ingress {

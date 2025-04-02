@@ -2,9 +2,9 @@
 
 terraform {
   backend "s3" {
-    bucket = "sctp-ce9-tfstate"
-    key    = "luke-ce9-activity3-2.tfstate"
-    region = "us-east-1"
+    bucket  = "sctp-ce9-tfstate"
+    key     = "luke-ce9-activity3-2.tfstate"
+    region  = "us-east-1"
     encrypt = true
   }
 }
