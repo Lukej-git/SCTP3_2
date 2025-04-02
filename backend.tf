@@ -7,8 +7,5 @@ terraform {
     region  = "us-east-1"
     encrypt = true
   }
-}
-
-terraform {
   required_version = ">= 1.0.0"
 }
